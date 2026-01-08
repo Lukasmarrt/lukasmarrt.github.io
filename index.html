@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUKASMART | 饒舌歌手</title>
+    <title>Lukasmart | 饒舌歌手</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Arial Black', 'Impact', sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a0000 50%, #000000 100%);
             color: #fff;
             overflow-x: hidden;
         }
@@ -23,20 +23,20 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(10px);
             padding: 20px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            border-bottom: 2px solid #ff0080;
+            border-bottom: 2px solid #ff0000;
         }
 
         .logo {
             font-size: 28px;
             font-weight: bold;
-            background: linear-gradient(45deg, #ff0080, #7928ca, #00d4ff);
+            background: linear-gradient(45deg, #ff0000, #cc0000, #ff3333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 3px;
@@ -56,7 +56,7 @@
         }
 
         .nav-links a:hover {
-            color: #ff0080;
+            color: #ff0000;
             transform: translateY(-2px);
         }
 
@@ -76,8 +76,8 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(255, 0, 128, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(0, 212, 255, 0.3) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(255, 0, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(139, 0, 0, 0.3) 0%, transparent 50%);
             animation: pulse 8s ease-in-out infinite;
         }
 
@@ -96,13 +96,13 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 8px;
-            text-shadow: 0 0 20px #ff0080, 0 0 40px #ff0080;
+            text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
             animation: glow 2s ease-in-out infinite alternate;
         }
 
         @keyframes glow {
-            from { text-shadow: 0 0 20px #ff0080, 0 0 40px #ff0080; }
-            to { text-shadow: 0 0 30px #00d4ff, 0 0 60px #00d4ff; }
+            from { text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000; }
+            to { text-shadow: 0 0 30px #ff3333, 0 0 60px #ff3333; }
         }
 
         .hero p {
@@ -115,18 +115,18 @@
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            background: linear-gradient(45deg, #ff0080, #7928ca);
+            background: linear-gradient(45deg, #ff0000, #cc0000);
             color: #fff;
             text-decoration: none;
             font-weight: bold;
             border-radius: 50px;
             transition: all 0.3s;
-            box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
         }
 
         .cta-button:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 40px rgba(255, 0, 128, 0.8);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
         }
 
         /* 關於區塊 */
@@ -141,7 +141,7 @@
             margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 4px;
-            background: linear-gradient(45deg, #ff0080, #00d4ff);
+            background: linear-gradient(45deg, #ff0000, #ff3333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -162,13 +162,13 @@
         .profile-img {
             width: 100%;
             height: 400px;
-            background: linear-gradient(135deg, #ff0080, #7928ca, #00d4ff);
+            background: linear-gradient(135deg, #ff0000, #8b0000, #ff3333);
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 100px;
-            box-shadow: 0 20px 60px rgba(255, 0, 128, 0.3);
+            box-shadow: 0 20px 60px rgba(255, 0, 0, 0.3);
         }
 
         /* 作品集區塊 */
@@ -180,9 +180,9 @@
         }
 
         .music-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 0, 0, 0.05);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 0, 128, 0.3);
+            border: 2px solid rgba(255, 0, 0, 0.3);
             border-radius: 15px;
             padding: 30px;
             transition: all 0.3s;
@@ -191,14 +191,14 @@
 
         .music-card:hover {
             transform: translateY(-10px);
-            border-color: #ff0080;
-            box-shadow: 0 20px 40px rgba(255, 0, 128, 0.4);
+            border-color: #ff0000;
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.4);
         }
 
         .music-card h3 {
             font-size: 24px;
             margin-bottom: 15px;
-            color: #ff0080;
+            color: #ff0000;
         }
 
         .music-card p {
@@ -210,10 +210,10 @@
             display: inline-block;
             margin-top: 15px;
             padding: 5px 15px;
-            background: rgba(255, 0, 128, 0.2);
+            background: rgba(255, 0, 0, 0.2);
             border-radius: 20px;
             font-size: 14px;
-            color: #ff0080;
+            color: #ff0000;
         }
 
         /* 聯絡區塊 */
@@ -225,9 +225,9 @@
         }
 
         .contact-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 0, 0, 0.05);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(0, 212, 255, 0.3);
+            border: 2px solid rgba(255, 0, 0, 0.3);
             border-radius: 15px;
             padding: 30px;
             text-align: center;
@@ -235,8 +235,8 @@
         }
 
         .contact-card:hover {
-            border-color: #00d4ff;
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+            border-color: #ff0000;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
         }
 
         .contact-card .icon {
@@ -247,17 +247,18 @@
         .contact-card h3 {
             font-size: 20px;
             margin-bottom: 10px;
-            color: #00d4ff;
+            color: #ff0000;
         }
 
         .contact-card a {
             color: #aaa;
             text-decoration: none;
             transition: color 0.3s;
+            word-break: break-all;
         }
 
         .contact-card a:hover {
-            color: #00d4ff;
+            color: #ff0000;
         }
 
         /* Footer */
@@ -265,7 +266,7 @@
             text-align: center;
             padding: 40px;
             background: rgba(0, 0, 0, 0.8);
-            border-top: 2px solid #ff0080;
+            border-top: 2px solid #ff0000;
             color: #666;
         }
 
@@ -306,7 +307,7 @@
 <body>
     <!-- 導航欄 -->
     <nav>
-        <div class="logo">LUKASMART</div>
+        <div class="logo">Lukasmart</div>
         <div class="nav-links">
             <a href="#home">首頁</a>
             <a href="#about">關於</a>
@@ -319,7 +320,7 @@
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>LUKASMART</h1>
+            <h1>Lukasmart</h1>
             <p>🎤 饒舌歌手 | 音樂創作者 | 街頭詩人</p>
             <a href="#music" class="cta-button">聆聽我的音樂</a>
         </div>
@@ -330,7 +331,7 @@
         <h2>關於我</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Yo! 我是 LUKASMART，一位來自台灣的饒舌歌手。</p>
+                <p>Yo! 我是 Lukasmart，一位來自台灣的饒舌歌手。</p>
                 <p>用音樂說故事，用節奏傳達態度。從街頭到舞台，我的每一首歌都是生活的真實寫照。</p>
                 <p>嘻哈不只是音樂，更是一種生活方式。我用 Rap 表達自我，用 Beat 征服世界。</p>
                 <p>📍 台北 | 🎵 Hip-Hop / Trap / Boom Bap</p>
@@ -373,29 +374,29 @@
             <div class="contact-card">
                 <div class="icon">📧</div>
                 <h3>Email</h3>
-                <a href="mailto:lukasmart@example.com">lukasmart@example.com</a>
+                <a href="mailto:whu910015@gmail.com">whu910015@gmail.com</a>
             </div>
             <div class="contact-card">
                 <div class="icon">📱</div>
                 <h3>Instagram</h3>
-                <a href="https://instagram.com/lukasmart" target="_blank">@lukasmart</a>
+                <a href="https://instagram.com/lukasmarrt" target="_blank">@lukasmarrt</a>
             </div>
             <div class="contact-card">
                 <div class="icon">🎵</div>
                 <h3>YouTube</h3>
-                <a href="https://youtube.com/@lukasmart" target="_blank">LUKASMART Official</a>
+                <a href="https://youtube.com/@lukasmart-art" target="_blank">Lukasmart Official</a>
             </div>
             <div class="contact-card">
                 <div class="icon">🎶</div>
                 <h3>Spotify</h3>
-                <a href="https://spotify.com" target="_blank">收聽我的音樂</a>
+                <a href="https://open.spotify.com/artist/0EOp5BKDKVai5Kf5ntimE2?si=qdWRRHWERqC-4QPCusyeUQ" target="_blank">收聽我的音樂</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 LUKASMART. All Rights Reserved. | Keep It Real 💯</p>
+        <p>&copy; 2024 Lukasmart. All Rights Reserved. | Keep It Real 💯</p>
     </footer>
 
     <script>
